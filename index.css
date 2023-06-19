@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto',sans sherif;
+    font-family: 'Helvetica',sans-serif;
     margin: 0;
 }
 
@@ -16,7 +16,7 @@ h2{font-size: 2.7em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{list-style: none;}
-li{font-size: 1.25;}
+li{font-size: 1.25em;}
 
 button{
     font-size: 1.5em;
@@ -47,11 +47,11 @@ header{
 }
 header .logo{
     margin: 0;
-    padding:25px 30px;
+    padding:70px 30px;
     text-align: center;
     color:chocolate;
     font-weight: bold;
-    font-size: 1.45em;
+    font-size: 2em;
 }
 
 header .container{
@@ -69,7 +69,7 @@ header .nav{
 }
 
 header a {
-    padding: 3px 12px;
+    padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color:black;
