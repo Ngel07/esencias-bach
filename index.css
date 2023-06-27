@@ -8,7 +8,7 @@ html{
 
 body{
     font-family: 'Helvetica',sans-serif;
-    margin: 0;
+    margin:0;
 }
 
 h1{font-size: 3.5em ;}
@@ -46,8 +46,8 @@ header{
  
 }
 header .logo{
-    margin: 0;
-    padding:70px 30px;
+    margin:0;
+    padding:60px 30px;
     text-align: center;
     color:chocolate;
     font-weight: bold;
@@ -86,7 +86,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 70vh;
+    height: 90vh;
     color:rgb(31, 7, 7);
     background-image:linear-gradient(
         0deg,
@@ -97,10 +97,12 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+
 }
 
 #hero h1{
-    color: whitesmoke
+    color: whitesmoke;
 
 }
 
@@ -214,14 +216,37 @@ footer .container{
 }
 
 @media (min-width: 720px){
+    header{
+        position: fixed;
+        width:100%;
+    }    
+
     header .container{
         flex-direction: row;
         justify-content: space-between;
     } 
 
-    header .nav{
+    header nav{
         flex-direction: row;
         padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Fan-de-las-Flores .container{
+
+    }
+
+    #Fan-de-las-Flores .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.35),
+            rgba(0,0,0,0.35)
+        ),url("media/cuentagotas.avif");
+        background-size: cover;
+        background-position:left ;
+        height:auto;
+        width: 40%;
+
     }
 
 }
