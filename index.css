@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin:0;
 }
 
 html{
@@ -19,18 +20,18 @@ ul{list-style: none;}
 li{font-size: 1.25em;}
 
 button{
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px; /*se usa para redondear los bordes de los botones*/
     border: 2px solid rgb(0,0,0,0.5);
-    color:white;
+    color:rgb(15, 14, 14,0.75);
     background-color: rgb(44, 185, 44);
 }
 
 button:hover{
     background-color: green;
-
+    cursor:pointer; 
 }
 
 .container{
@@ -97,12 +98,11 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-
 }
 
 #hero h1{
     color: whitesmoke;
+    
 
 }
 
@@ -112,33 +112,31 @@ header a:hover{
     background-color: antiquewhite;
 }
 
-#Esencias{
+#esencias{
     background-color: rgb(111, 201, 119);
     color: rgb(31, 153, 37);
     text-align: center;
 }
 
-#Esencias .container{
+#esencias .container{
     padding: 100px 0px ;
 }
 
-#Esencias h2{
+#esencias h2{
     margin-top: 0;
     font-size:3em ;
 }
 
-#Esencias p{
-    display: none;
+#esencias p{
+    display:none;
 }
 
-#Esencias .carta{
+#esencias .carta{
     background-position: center center;
     background-size: cover;
-    padding:50px 0px;
-    margin: 20px;
+    padding:50px 30px;
+    margin: 15px;
     border-radius: 15px ;
-
-
 }
 
 .carta:first-child{
@@ -196,11 +194,11 @@ header a:hover{
 }
 
 #inicia-ya h2{
-    font-size: 6vw;
+    font-size: 4vw;
 }
 
 #inicia-ya button{
-    font-size: 4vw;
+    font-size: 20px;
 }
 
 footer{
@@ -232,22 +230,52 @@ footer .container{
         padding-right: 20px;
     }
 
+    #hero{
+        padding: 400px 30px;
+    }
+
+
     #Fan-de-las-Flores .container{
-
+        display: flex; 
+        justify-content: space-evenly;       
     }
 
+    #Fan-de-las-Flores .texto{
+        width:50%;
+        max-width:600px;
+        padding: 30px 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
     #Fan-de-las-Flores .img-container{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.35),
-            rgba(0,0,0,0.35)
-        ),url("media/cuentagotas.avif");
+        background-image:url("media/arreglo-gotas.avif");
         background-size: cover;
-        background-position:left ;
-        height:auto;
-        width: 40%;
-
+        background-position:center center ;
+        height:500px;
+        width:50%;
     }
+
+    #esencias .textoesencias{
+        display:flex;
+    }
+    
+    #esencias h3{
+        margin-top:0;
+    }
+
+    #esencias p{
+        display:block;
+        margin-bottom: 20px;
+    }
+
+    #esencias .carta{
+        padding: 20px;
+    }
+
 
 }
 
