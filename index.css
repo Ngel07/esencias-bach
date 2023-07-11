@@ -24,33 +24,33 @@ button{
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px; /*se usa para redondear los bordes de los botones*/
-    border: 2px solid rgb(0,0,0,0.5);
-    color:rgb(15, 14, 14,0.75);
-    background-color: rgb(44, 185, 44);
+    border: 2px solid #0000007F;
+    color:#0F0E0EBF;
+    background-color: #2CB92C;
 }
 
 button:hover{
-    background-color: green;
+    background-color: #008000;
     cursor:pointer; 
 }
 
 .container{
     max-width: 1400px;
-    margin:auto; 
-    
+    margin:auto;  
 }
 
-.color-acento{color: rgb(63, 207, 63);}
+.color-acento{color: #3FCF3F;}
 
 header{
-    background-color: antiquewhite;
+    background-color: #FAEBD7;
+    
  
 }
 header .logo{
     margin:0;
-    padding:60px 30px;
+    padding:50px 30px;
     text-align: center;
-    color:chocolate;
+    color:#B15E22;
     font-weight: bold;
     font-size: 2em;
 }
@@ -74,25 +74,25 @@ header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color:black;
+    color: #000000;
 }
 
 header a:hover{
-    color:greenyellow
+    color:#ADFF2F;
 }
 
-#hero{
+#hero {
     display:flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color:rgb(31, 7, 7);
+    color:#1F0707;
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        #0000007F,
+        #0000007F
     ),
     url("media/cerezo.jpg");
     background-repeat: no-repeat;
@@ -100,21 +100,43 @@ header a:hover{
     background-position: center center;
 }
 
-#hero h1{
-    color: whitesmoke;
-    
-
+#hero2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color:#1F0707;
+    background-image:linear-gradient(
+        0deg,
+        #0000007F,
+        #0000007F
+    ),
+    url("media/sunflower.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+#hero {
+    color: #FAEBD7;
+}
+
+#hero2 {
+    color: #FAEBD7;
+}
+
 
 #Fan-de-las-Flores .container{
     text-align: center;
     padding: 150px 10px;
-    background-color: antiquewhite;
+    background-color: #FAEBD7;
 }
 
 #esencias{
-    background-color: rgb(111, 201, 119);
-    color: rgb(31, 153, 37);
+    background-color: 6FC977;
+    color: #1F9925;
     text-align: center;
 }
 
@@ -142,31 +164,31 @@ header a:hover{
 .carta:first-child{
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
+        #00000059,
+        #00000059
     )
     ,url("media/sunflower.jpg");
-    color:rgb(233, 243, 235)
+    color:#FAEBD7
     }
 
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
+        #00000059,
+        #00000059
     )
     ,url("media/leaf.jpg");
-    color:rgb(224, 235, 224)
+    color:#FAEBD7
 }
 
 .carta:nth-child(3){
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
+        #00000059,
+        #00000059
     )
     ,url("media/armillar.jpg");
-    color:rgb(238, 245, 239)
+    color:#FAEBD7
 }
 
 #caracteristicas .container{
@@ -187,8 +209,8 @@ header a:hover{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: rgb(210, 121, 233);
-    color: whitesmoke;
+    background-color: #D279E9;
+    color: #FAEBD7;
     height: 30vh;
     padding: 30px 12px;
 }
@@ -202,11 +224,11 @@ header a:hover{
 }
 
 footer{
-    background-color:  rgba(211, 121, 233, 0.521)
+    background-color: #8A6F9184
 }
 
 footer .container{
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
