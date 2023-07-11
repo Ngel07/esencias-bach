@@ -128,7 +128,7 @@ header a:hover{
 }
 
 
-#Fan-de-las-Flores .container{
+#fandelasflores .container{
     text-align: center;
     padding: 150px 10px;
     background-color: #FAEBD7;
@@ -203,7 +203,7 @@ header a:hover{
 
 }
 
-#inicia-ya{
+#iniciaya{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,11 +215,11 @@ header a:hover{
     padding: 30px 12px;
 }
 
-#inicia-ya h2{
+#iniciaya h2{
     font-size: 4vw;
 }
 
-#inicia-ya button{
+#iniciaya button{
     font-size: 20px;
 }
 
@@ -257,12 +257,12 @@ footer .container{
     }
 
 
-    #Fan-de-las-Flores .container{
+    #fandelasflores .container{
         display: flex; 
         justify-content: space-evenly;       
     }
 
-    #Fan-de-las-Flores .texto{
+    #fandelasflores .texto{
         width:50%;
         max-width:600px;
         padding: 30px 20px;
@@ -273,7 +273,7 @@ footer .container{
 
     }
     
-    #Fan-de-las-Flores .img-container{
+    #fandelasflores .img-container{
         background-image:url("media/arreglo-gotas.avif");
         background-size: cover;
         background-position:center center ;
@@ -281,7 +281,7 @@ footer .container{
         width:50%;
     }
 
-    #esencias .textoesencias{
+    #esencias .texto-esencias{
         display:flex;
     }
     
