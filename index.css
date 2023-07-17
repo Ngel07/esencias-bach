@@ -164,7 +164,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 150vh;
     color: #FAEBD7;
     background-image:linear-gradient(
         0deg,
@@ -176,6 +176,7 @@ header a:hover{
     background-size: cover;
     background-position: center center;
 }
+
 #fandelasflores .container{
     text-align: center;
     padding: 150px 10px;
@@ -222,7 +223,7 @@ header a:hover{
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
-        #00000059,
+        #d65c5c59,
         #00000059
     )
     ,url("media/leaf.jpg");
@@ -304,6 +305,21 @@ footer .container{
         padding: 400px 30px;
     }
 
+    
+    .img-container-redes :first-child{
+        background-image:url("media/logointagram.png") ;
+        float:left;
+    }
+    
+    .carta-redes:nth-child(2){
+        background-image: url("media/logofaceboock.png");
+        float:left;
+    }
+    
+    .carta-redes:nth-child(3){
+        background-image: url("media/logotwiter.png");
+        float:left;
+    }
 
     #fandelasflores .container{
         display: flex; 
