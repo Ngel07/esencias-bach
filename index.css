@@ -17,7 +17,7 @@ h2{font-size: 2.7em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{list-style: none;}
-li{font-size: 1.25em;}
+li{font-size: 1em;}
 
 button{
     font-size: 20px;
@@ -248,8 +248,8 @@ header a:hover{
 #caracteristicas li{
     margin: 0px 0px;
     font-weight: bolder;
-    font-size: 1.5em;
-
+    text-align: left;
+    font-size: 1em;
 }
 
 #iniciaya{
@@ -269,7 +269,7 @@ header a:hover{
 }
 
 #iniciaya button{
-    font-size: 20px;
+    font-size: 1em;
 }
 
 footer{
@@ -303,28 +303,20 @@ footer .container{
 
     #hero{
         padding: 400px 30px;
+        
     }
 
-    
-    .img-container-redes :first-child{
-        background-image:url("media/logointagram.png") ;
-        float:left;
-    }
-    
-    .carta-redes:nth-child(2){
-        background-image: url("media/logofaceboock.png");
-        float:left;
-    }
-    
-    .carta-redes:nth-child(3){
-        background-image: url("media/logotwiter.png");
-        float:left;
+    .logo-redes{
+        max-width: 70px;
+        min-width:15px;
+        margin: 20px;
+        border-radius: 10px;
     }
 
     #fandelasflores .container{
         display: flex; 
         justify-content: space-evenly; 
-        padding:30px;      
+        padding:30px;     
     }
 
     #fandelasflores .texto{
@@ -344,6 +336,7 @@ footer .container{
         background-position:center center ;
         height:600px;
         width: 40%;
+        border-radius: 15px;
     }
 
     #esencias .texto-esencias{
@@ -356,11 +349,19 @@ footer .container{
 
     #esencias p{
         display:block;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     #esencias .carta{
         padding: 20px;
+    }
+
+    #caracteristicas li{
+        margin: 0px 0px;
+        font-weight: bolder;
+        font-size: 1.5em;
+        text-align:center;
+    
     }
 
 
