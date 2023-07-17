@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin:0;
 }
 
 html{
@@ -8,7 +9,7 @@ html{
 
 body{
     font-family: 'Helvetica',sans-serif;
-    margin: 0;
+    margin:0;
 }
 
 h1{font-size: 3.5em ;}
@@ -19,37 +20,37 @@ ul{list-style: none;}
 li{font-size: 1.25em;}
 
 button{
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px; /*se usa para redondear los bordes de los botones*/
-    border: 2px solid rgb(0,0,0,0.5);
-    color:white;
-    background-color: rgb(44, 185, 44);
+    border: 2px solid #0000007F;
+    color:#0F0E0EBF;
+    background-color: #2CB92C;
 }
 
 button:hover{
-    background-color: green;
-
+    background-color: #008000;
+    cursor:pointer; 
 }
 
 .container{
     max-width: 1400px;
-    margin:auto; 
-    
+    margin:auto;  
 }
 
-.color-acento{color: green;}
+.color-acento{color: #3FCF3F;}
 
 header{
-    background-color: antiquewhite;
+    background-color: #FAEBD7;
+    
  
 }
 header .logo{
-    margin: 0;
-    padding:70px 30px;
+    margin:0;
+    padding:50px 30px;
     text-align: center;
-    color:chocolate;
+    color:#B15E22;
     font-weight: bold;
     font-size: 2em;
 }
@@ -57,6 +58,7 @@ header .logo{
 header .container{
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 
@@ -64,7 +66,7 @@ header .nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
       
 }
 
@@ -72,25 +74,25 @@ header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color:black;
+    color: #000000;
 }
 
 header a:hover{
-    color:greenyellow
+    color:#ADFF2F;
 }
 
-#hero{
+#hero {
     display:flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color:rgb(202, 199, 199);
+    color: #FAEBD7;
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        #0000007F,
+        #0000007F
     ),
     url("media/cerezo.jpg");
     background-repeat: no-repeat;
@@ -98,127 +100,269 @@ header a:hover{
     background-position: center center;
 }
 
-#hero h1{
-    color: whitesmoke
-
-}
-
-
-
-#Fan-de-las-Flores .container{
+#hero2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 200px 12px;
-    background-color: antiquewhite;
+    flex-direction: column;
+    height: 90vh;
+    color: #FAEBD7;
+    background-image:linear-gradient(
+        0deg,
+        #0000007F,
+        #0000007F
+    ),
+    url("media/sunflower.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-#Esencias{
-    background-color: rgb(199, 133, 174);
-    color: rgb(137, 238, 145);
+#hero3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #FAEBD7;
+    background-image:linear-gradient(
+        0deg,
+        #0000007F,
+        #0000007F
+    ),
+    url("media/leaf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #FAEBD7;
+    background-image:linear-gradient(
+        0deg,
+        #0000007F,
+        #0000007F
+    ),
+    url("media/armillar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#herosuscription {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 150vh;
+    color: #FAEBD7;
+    background-image:linear-gradient(
+        0deg,
+        #0000007F,
+        #0000007F
+    ),
+    url("media/cuchara-esencia.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#fandelasflores .container{
+    text-align: center;
+    padding: 150px 10px;
+    background-color: #FAEBD7;
+}
+
+#esencias{
+    background-color: #6FC977;
+    color: #1F9925;
     text-align: center;
 }
 
-#Esencias .container{
+#esencias .container{
     padding: 100px 0px ;
 }
 
-#Esencias h2{
+#esencias h2{
     margin-top: 0;
     font-size:3em ;
 }
 
-#Esencias p{
-    display: none;
+#esencias p{
+    display:none;
 }
 
-#Esencias .carta{
+#esencias .carta{
     background-position: center center;
     background-size: cover;
-    padding:50px 0px;
-    margin: 30px;
+    padding:50px 30px;
+    margin: 15px;
     border-radius: 15px ;
-
 }
 
 .carta:first-child{
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
+        #00000059,
+        #00000059
     )
     ,url("media/sunflower.jpg");
+    color:#FAEBD7
     }
 
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
+        #d65c5c59,
+        #00000059
     )
-    ,url("media/leaf.jpg")
+    ,url("media/leaf.jpg");
+    color:#FAEBD7
 }
 
 .carta:nth-child(3){
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
+        #00000059,
+        #00000059
     )
-    ,url("media/armillar.jpg")
+    ,url("media/armillar.jpg");
+    color:#FAEBD7
 }
 
 #caracteristicas .container{
     text-align: center;
-    padding: 100px 12px;
+    padding: 30px 12px;
 }
 
 #caracteristicas li{
-    margin: 15px 0px;
-    font-weight: bold;
-    font-size: 2em;
+    margin: 0px 0px;
+    font-weight: bolder;
+    font-size: 1.5em;
 
 }
 
-#inicia-ya{
+#iniciaya{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: blueviolet;
-    color: whitesmoke;
-    height: 80vh;
-    padding: 50px 12px;
+    background-color: #D279E9;
+    color: #FAEBD7;
+    height: 30vh;
+    padding: 30px 12px;
 }
 
-#inicia-ya h2{
-    font-size: 9vw;
+#iniciaya h2{
+    font-size: 4vw;
 }
 
-#inicia-ya button{
-    font-size: 5vw;
+#iniciaya button{
+    font-size: 20px;
 }
 
 footer{
-    background-color:  rgb(199, 133, 174)
+    background-color: #8A6F9184
 }
 
 footer .container{
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    text-align: center;
 }
 
 @media (min-width: 720px){
+    header{
+        position: fixed;
+        width:100%;
+    }    
+
     header .container{
         flex-direction: row;
         justify-content: space-between;
     } 
 
-    header .nav{
+    header nav{
         flex-direction: row;
         padding-bottom: 0;
+        padding-right: 20px;
     }
+
+    #hero{
+        padding: 400px 30px;
+    }
+
+    
+    .img-container-redes :first-child{
+        background-image:url("media/logointagram.png") ;
+        float:left;
+    }
+    
+    .carta-redes:nth-child(2){
+        background-image: url("media/logofaceboock.png");
+        float:left;
+    }
+    
+    .carta-redes:nth-child(3){
+        background-image: url("media/logotwiter.png");
+        float:left;
+    }
+
+    #fandelasflores .container{
+        display: flex; 
+        justify-content: space-evenly; 
+        padding:30px;      
+    }
+
+    #fandelasflores .texto{
+        width:50%;
+        max-width:400px;
+        padding: 30px 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    #fandelasflores .img-container{
+        background-image:url("media/arreglo-gotas.avif");
+        background-size: cover;
+        background-position:center center ;
+        height:600px;
+        width: 40%;
+    }
+
+    #esencias .texto-esencias{
+        display:flex;
+    }
+    
+    #esencias h3{
+        margin-top:0;
+    }
+
+    #esencias p{
+        display:block;
+        margin-bottom: 20px;
+    }
+
+    #esencias .carta{
+        padding: 20px;
+    }
+
 
 }
 
