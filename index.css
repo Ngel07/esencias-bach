@@ -31,7 +31,7 @@ button{
 
 button:hover{
     background-color: #008000;
-    cursor:pointer 
+    cursor:pointer;
 }
 
 .container{
@@ -44,7 +44,7 @@ button:hover{
 }
 
 header{
-    background-color: #faebd7e0;
+    background-color: #FAEDD7E0;
     position:fixed;
     width: 100%;
 }
@@ -59,7 +59,7 @@ header .logo{
   }
 
 header .container{
-    display: flex;
+    display:flex;
     flex-direction: rigth;
     align-items: center;
 }
@@ -172,9 +172,17 @@ header .container nav{
 
 #fandelasflores .container{
     text-align: center;
-    padding: 25vm;
+    padding: 100px 15px;
     background-color:#FAEBD7;
     background-size: cover;
+}
+
+#videobeneficios {
+   background-color: #008000;
+   margin: 0 auto;
+   align-content: center;
+   padding: 2em;
+   display:flex;
 }
 
 #esencias{
@@ -184,7 +192,7 @@ header .container nav{
 }
 
 #esencias .container{
-    padding: 100px 0px;
+    padding: 100px 10px;
 }
 
 #esencias h2{
@@ -249,7 +257,7 @@ header .container nav{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #e4acf1;
+    background-color: #E4ACF1;
     color: #FAEBD7;
     height: 20vh;
     padding: 30px 12px
@@ -264,7 +272,7 @@ header .container nav{
 }
 
 footer{
-    background-color: #767077ea;
+    background-color: #767077EA;
 }
 
 footer .container{
