@@ -56,7 +56,7 @@ header .logo{
     color:#B15E22;
     font-weight: bold;
     font-size: 1em;
-  }
+}
 
 header .container{
     display:flex;
@@ -269,6 +269,11 @@ header .container nav{
 
 #iniciaya button{
     font-size: 2em;
+}
+
+#twitertimeline{
+    height: 50vm;
+    width: 30vm;
 }
 
 footer{
