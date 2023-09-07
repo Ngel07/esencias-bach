@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
     <title>Una hemocion una esencia</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -10,36 +10,50 @@
     <header>
         <div class="container">
             <p class="logo">TERAPIAS FLORALES DE EDWARD BACH</p> 
-            <nav>
-                <a href="#fandelasflores">Fan de las Flores</a>
-                <a href="#sencias">Conoce las Esencias</a>
-                <a href="#caracteristicas">Características</a>
+            
+                <input type="checkbox" id="menu-check">
+                <label id="menu"for="menu-check">
+                    <span id="menu-abrir">&#9776;</span>
+                    <span id="menu-cerrar">X</span>
+                </label> 
+            <nav>       
+                <ul>
+                    <li><a href="#fandelasflores">Fan de las Flores</a></li>
+                    <li><a href="#esencias">Conoce las Esencias</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                </ul>
             </nav> 
         </div>
     </header>
+
     <section id="herosuscription">
-        <div class="container"> 
+        <div class="container-redes"> 
             <h1>Síguenos</h1> 
             <div class="redes-sociales">
+                <div>
+                    <a href= "https://www.facebook.com/"><img class="logo-redes" src="media/logofaceboock.png" alt="fan.delasflores"></a>
+                    <h3>fan.delasflores</h3>
+                </div>
 
-                <div class="carta-redes">
-                    <p>@fandelasflores</p>
-                    <div class="img-container-redes"></div>
+                <div>
+                    <a href= "https://www.instagram.com/accounts/login/"><img class="logo-redes" src="media/logoinstagram.jpg" alt="@fandelasflores"></a>
+                    <h3>@fandelasflores</h3>
                 </div>
-                <div class="carta-redes">
-                    <p>fan.delasflores</p>
-                    <div class="img-container-redes"></div>
+
+                <div>
+                    <a href= "https://twitter.com/"><img class="logo-redes" src="media/logotwiter.png" alt="fan.delasflores2023"></a>
+                    <h3>fan.delasflores2023</h3>
                 </div>
-                <div class="carta-redes">
-                    <p>fandelasflores.2023</p>
-                    <div class="img-container-redes"></div>
-                </div>
-                
             </div>
         </div>
        
         <a href="index.html"><button>Regresar</button></a>        
-    </section>  
+    </section> 
+    
+    <section id="twittertimeline">
+        <a class="twitter-timeline" href="https://twitter.com/BlossomwithBach?ref_src=twsrc%5Etfw">Tweets by BlossomwithBach</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+    
 <footer>
     <div class="container">
         <p>&copy; Fan de las Flores <br>2023</p>

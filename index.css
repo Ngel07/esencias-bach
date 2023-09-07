@@ -12,73 +12,60 @@ body{
     margin:0;
 }
 
-h1{font-size: 3.5em ;}
-h2{font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
-ul{list-style: none;}
-li{font-size: 1.25em;}
+h1{font-size: 3.5em}
+h2{font-size: 2.7em}
+h3{font-size: 2em}
+p{font-size: 1.25em}
+ul{list-style: none}
+li{font-size: 1em}
 
 button{
-    font-size: 20px;
+    font-size: 2.5em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px; /*se usa para redondear los bordes de los botones*/
     border: 2px solid #0000007F;
     color:#0F0E0EBF;
-    background-color: #2CB92C;
+    background-color: #2CB92C
 }
 
 button:hover{
     background-color: #008000;
-    cursor:pointer; 
+    cursor:pointer;
 }
 
 .container{
-    max-width: 1400px;
-    margin:auto;  
+    max-width: 2600px;
+    margin:0
 }
 
-.color-acento{color: #3FCF3F;}
+.color-acento{
+    color: #1F9925
+}
 
 header{
-    background-color: #FAEBD7;
-    
- 
+    background-color: #FAEDD7E0;
+    position:fixed;
+    width: 100%;
 }
+
 header .logo{
     margin:0;
-    padding:50px 30px;
+    padding:20px 20px;
     text-align: center;
     color:#B15E22;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 header .container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    display:flex;
+    flex-direction: rigth;
     align-items: center;
 }
 
-header .nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 30px;
-      
-}
-
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000000;
-}
-
-header a:hover{
-    color:#ADFF2F;
+header .container nav{
+    display:none;
 }
 
 #hero {
@@ -87,7 +74,7 @@ header a:hover{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
     color: #FAEBD7;
     background-image:linear-gradient(
         0deg,
@@ -97,7 +84,7 @@ header a:hover{
     url("media/cerezo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    position:center center;
 }
 
 #hero2{
@@ -116,7 +103,7 @@ header a:hover{
     url("media/sunflower.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center
 }
 
 #hero3{
@@ -135,7 +122,7 @@ header a:hover{
     url("media/leaf.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center
 
 }
 
@@ -155,7 +142,7 @@ header a:hover{
     url("media/armillar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center
 }
 
 #herosuscription {
@@ -177,29 +164,44 @@ header a:hover{
     background-position: center center;
 }
 
+.logo-redes{
+    min-width:15px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
 #fandelasflores .container{
     text-align: center;
-    padding: 150px 10px;
-    background-color: #FAEBD7;
+    padding: 100px 15px;
+    background-color:#FAEBD7;
+    background-size: cover;
+}
+
+#videobeneficios {
+   background-color: #008000;
+   margin: 0 auto;
+   align-content: center;
+   padding: 2em;
+   display:flex;
 }
 
 #esencias{
-    background-color: #6FC977;
+    background-color: #FAEBD7;
     color: #1F9925;
     text-align: center;
 }
 
 #esencias .container{
-    padding: 100px 0px ;
+    padding: 100px 10px;
 }
 
 #esencias h2{
     margin-top: 0;
-    font-size:3em ;
+    font-size:3em;
 }
 
 #esencias p{
-    display:none;
+    display:none
 }
 
 #esencias .carta{
@@ -207,7 +209,7 @@ header a:hover{
     background-size: cover;
     padding:50px 30px;
     margin: 15px;
-    border-radius: 15px ;
+    border-radius: 15px
 }
 
 .carta:first-child{
@@ -221,12 +223,7 @@ header a:hover{
     }
 
 .carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        #d65c5c59,
-        #00000059
-    )
-    ,url("media/leaf.jpg");
+    background-image: url("media/leaf.jpg");
     color:#FAEBD7
 }
 
@@ -243,13 +240,15 @@ header a:hover{
 #caracteristicas .container{
     text-align: center;
     padding: 30px 12px;
+    background-color:#FAEBD7;
+    
 }
 
 #caracteristicas li{
     margin: 0px 0px;
     font-weight: bolder;
-    font-size: 1.5em;
-
+    text-align: left;
+    font-size: 1em
 }
 
 #iniciaya{
@@ -258,111 +257,35 @@ header a:hover{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #D279E9;
+    background-color: #E4ACF1;
     color: #FAEBD7;
-    height: 30vh;
-    padding: 30px 12px;
+    height: 20vh;
+    padding: 30px 12px
 }
 
 #iniciaya h2{
-    font-size: 4vw;
+    font-size: 2em;
 }
 
 #iniciaya button{
-    font-size: 20px;
+    font-size: 2em;
+}
+
+#twitertimeline{
+    height: 50vm;
+    width: 30vm;
 }
 
 footer{
-    background-color: #8A6F9184
+    background-color: #767077EA;
 }
 
 footer .container{
-    height: 100px;
+    height: 10vm;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    text-align: center;
+    text-align: center
 }
 
-@media (min-width: 720px){
-    header{
-        position: fixed;
-        width:100%;
-    }    
-
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    } 
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #hero{
-        padding: 400px 30px;
-    }
-
-    
-    .img-container-redes :first-child{
-        background-image:url("media/logointagram.png") ;
-        float:left;
-    }
-    
-    .carta-redes:nth-child(2){
-        background-image: url("media/logofaceboock.png");
-        float:left;
-    }
-    
-    .carta-redes:nth-child(3){
-        background-image: url("media/logotwiter.png");
-        float:left;
-    }
-
-    #fandelasflores .container{
-        display: flex; 
-        justify-content: space-evenly; 
-        padding:30px;      
-    }
-
-    #fandelasflores .texto{
-        width:50%;
-        max-width:400px;
-        padding: 30px 20px;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-    
-    #fandelasflores .img-container{
-        background-image:url("media/arreglo-gotas.avif");
-        background-size: cover;
-        background-position:center center ;
-        height:600px;
-        width: 40%;
-    }
-
-    #esencias .texto-esencias{
-        display:flex;
-    }
-    
-    #esencias h3{
-        margin-top:0;
-    }
-
-    #esencias p{
-        display:block;
-        margin-bottom: 20px;
-    }
-
-    #esencias .carta{
-        padding: 20px;
-    }
-
-
-}
 
