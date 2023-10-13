@@ -12,44 +12,45 @@ body{
     margin:0;
 }
 
-h1{font-size: 3.5em}
-h2{font-size: 2.7em}
-h3{font-size: 2em}
-p{font-size: 1.25em}
-ul{list-style: none}
-li{font-size: 1em}
+h1 {font-size: 3.5em}
+h2 {font-size: 2.7em}
+h3 {font-size: 2em}
+p {font-size: 1.25em}
+ul {list-style: none}
+li {font-size: 1em}
 
-button{
+button {
     font-size: 2.5em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px; /*se usa para redondear los bordes de los botones*/
     border: 2px solid #0000007F;
     color:#0F0E0EBF;
-    background-color: #2CB92C
+    background-color: #2CB92C;
+
 }
 
-button:hover{
+button:hover {
     background-color: #008000;
     cursor:pointer;
 }
 
-.container{
+.container {
     max-width: 2600px;
     margin:0
 }
 
-.color-acento{
+.color-acento {
     color: #1F9925
 }
 
-header{
+header {
     background-color: #FAEDD7E0;
     position:fixed;
     width: 100%;
 }
 
-header .logo{
+header .logo {
     margin:0;
     padding:20px 20px;
     text-align: center;
@@ -58,15 +59,43 @@ header .logo{
     font-size: 1em;
 }
 
-header .container{
+header .container {
     display:flex;
-    flex-direction: rigth;
+    justify-content: space-between;
     align-items: center;
 }
 
-header .container nav{
+header .container nav {
     display:none;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color:#000000;
+    background-color: #b94c95a9;
+    font-weight: bold;
+}
+
+#menu-check {
+    display: none;
+}
+
+#menu-cerrar {
+    display: none;
+}
+
+#menu-check:checked + label + nav {
+    display: flex;
+}
+
+#menu-check:checked + label #menu-abrir {
+    display: none;
+}
+
+#menu-check:checked + label #menu-cerrar {
+    display: block;
+}
+
 
 #hero {
     display:flex;
@@ -74,7 +103,7 @@ header .container nav{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     color: #FAEBD7;
     background-image:linear-gradient(
         0deg,
@@ -87,7 +116,7 @@ header .container nav{
     position:center center;
 }
 
-#hero2{
+#hero2 {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +135,7 @@ header .container nav{
     background-position: center center
 }
 
-#hero3{
+#hero3 {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +155,7 @@ header .container nav{
 
 }
 
-#hero4{
+#hero4 {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -147,11 +176,10 @@ header .container nav{
 
 #herosuscription {
     display:flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 150vh;
+    height: 160vh;
     color: #FAEBD7;
     background-image:linear-gradient(
         0deg,
@@ -164,55 +192,66 @@ header .container nav{
     background-position: center center;
 }
 
-.logo-redes{
+
+.logo-redes {
     min-width:15px;
     margin: 20px;
     border-radius: 15px;
+    
 }
 
-#fandelasflores .container{
+#fandelasflores .container {
     text-align: center;
     padding: 100px 15px;
-    background-color:#FAEBD7;
+    background-color:#f1d5b0;
     background-size: cover;
 }
 
 #videobeneficios {
    background-color: #008000;
-   margin: 0 auto;
-   align-content: center;
+   justify-content: center;
    padding: 2em;
-   display:flex;
+   display: flex;
+   align-items: center;
+   
 }
 
-#esencias{
+#esencias {
     background-color: #FAEBD7;
     color: #1F9925;
     text-align: center;
 }
 
-#esencias .container{
+#esencias .container {
     padding: 100px 10px;
 }
 
-#esencias h2{
+#esencias h2 {
     margin-top: 0;
     font-size:3em;
 }
 
-#esencias p{
+#esencias p {
     display:none
 }
 
-#esencias .carta{
+#esencias .carta {
     background-position: center center;
     background-size: cover;
     padding:50px 30px;
     margin: 15px;
-    border-radius: 15px
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.carta:first-child{
+#esencias .carta button {
+    font-size: 2.5vh;
+    align-self: flex-end; 
+}
+
+.carta:first-child {
     background-image: linear-gradient(
         0deg,
         #00000059,
@@ -222,12 +261,12 @@ header .container nav{
     color:#FAEBD7
     }
 
-.carta:nth-child(2){
+.carta:nth-child(2) {
     background-image: url("media/leaf.jpg");
     color:#FAEBD7
 }
 
-.carta:nth-child(3){
+.carta:nth-child(3) {
     background-image: linear-gradient(
         0deg,
         #00000059,
@@ -237,21 +276,21 @@ header .container nav{
     color:#FAEBD7
 }
 
-#caracteristicas .container{
+#caracteristicas .container {
     text-align: center;
     padding: 30px 12px;
     background-color:#FAEBD7;
     
 }
 
-#caracteristicas li{
+#caracteristicas li {
     margin: 0px 0px;
     font-weight: bolder;
     text-align: left;
     font-size: 1em
 }
 
-#iniciaya{
+#iniciaya {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,28 +298,28 @@ header .container nav{
     align-items: center;
     background-color: #E4ACF1;
     color: #FAEBD7;
-    height: 20vh;
+    height: 30vh;
     padding: 30px 12px
 }
 
-#iniciaya h2{
+#iniciaya h2 {
     font-size: 2em;
 }
 
-#iniciaya button{
+#iniciaya button {
     font-size: 2em;
 }
 
-#twitertimeline{
+#twitertimeline {
     height: 50vm;
     width: 30vm;
 }
 
-footer{
+footer {
     background-color: #767077EA;
 }
 
-footer .container{
+footer .container {
     height: 10vm;
     display: flex;
     justify-content: center;
@@ -288,4 +327,112 @@ footer .container{
     text-align: center
 }
 
+@media only screen and (min-width: 600px){
+    
+    header .logo{
+        padding:50px 30px;
+        font-size: 3vh;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    
+    
+    header .container nav{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+  
 
+    header a {
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction:row-reverse;
+    }
+    nav ul li a {
+        background-color: #00000000;
+    }
+
+    header a:hover{
+        color:#ADFF2F
+    }
+
+    input {
+        display: none;
+    }
+
+    label{
+        display:none;
+    }
+
+    #hero, #hero2, #hero3, #hero4, #herosuscription{
+        height: 130vh;
+    }
+
+    button {
+        font-size: 3.5vh;
+    }
+    
+    #fandelasflores .container{
+        display: flex; 
+        justify-content: space-evenly; 
+        padding:30px  
+    }
+
+    #fandelasflores .texto{
+        width:50%;
+        max-width:400px;
+        padding: 30px 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+
+    }
+    
+    #fandelasflores .img-container{
+        background-image:url("media/arreglo-gotas.avif");
+        background-size: cover;
+        background-position:center center ;
+        height:600px;
+        width: 50%;
+        border-radius: 80px;
+    }
+
+    #esencias {
+        padding: 20px;
+    }
+
+    #esencias .carta button {
+        font-size: 2.5vh;
+        align-items: flex-end; 
+    }
+    
+    #esencias .texto-esencias {
+        display: flex;
+        justify-content: center;
+    }
+
+    #esencias .carta{
+        max-width: 32%;
+    }
+
+    #esencias p {
+        display:block;
+    }
+    
+}
